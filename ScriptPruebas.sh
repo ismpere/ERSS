@@ -20,7 +20,7 @@ do
   do
     nfich="IC"$i
     echo "Lanzando prueba $i con ${peticiones[$i-1]} peticiones y ${concurrentes[$i-1]} clientes"
-    ab -k -s $tiemout -n ${peticiones[$i-1]} -c ${concurrentes[$i-1]} $direccionCorta >$nfich
+    ab -k -s $timeout -n ${peticiones[$i-1]} -c ${concurrentes[$i-1]} $direccionCorta >$nfich
     echo "Completada prueba $i"
   done
   cd ..
