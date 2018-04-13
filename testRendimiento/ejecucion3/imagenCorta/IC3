@@ -1,0 +1,43 @@
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking virtual.lab.inf.uva.es (be patient)
+
+
+Server Software:        Apache/2.4.18
+Server Hostname:        virtual.lab.inf.uva.es
+Server Port:            31172
+
+Document Path:          /gatosPequenios.html
+Document Length:        439 bytes
+
+Concurrency Level:      100
+Time taken for tests:   0.564 seconds
+Complete requests:      5000
+Failed requests:        0
+Keep-Alive requests:    5000
+Total transferred:      3730097 bytes
+HTML transferred:       2195000 bytes
+Requests per second:    8859.99 [#/sec] (mean)
+Time per request:       11.287 [ms] (mean)
+Time per request:       0.113 [ms] (mean, across all concurrent requests)
+Transfer rate:          6454.81 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      0       3
+Processing:     0   11  16.6      8     146
+Waiting:        0   11  16.6      8     146
+Total:          0   11  16.6      8     146
+
+Percentage of the requests served within a certain time (ms)
+  50%      8
+  66%     12
+  75%     14
+  80%     15
+  90%     18
+  95%     25
+  98%     66
+  99%     97
+ 100%    146 (longest request)

@@ -1,0 +1,44 @@
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking virtual.lab.inf.uva.es (be patient)
+
+
+Server Software:        Apache/2.4.18
+Server Hostname:        virtual.lab.inf.uva.es
+Server Port:            31172
+
+Document Path:          /perrosGrandes.html
+Document Length:        420 bytes
+
+Concurrency Level:      250
+Time taken for tests:   6.073 seconds
+Complete requests:      10000
+Failed requests:        59
+   (Connect: 0, Receive: 0, Length: 59, Exceptions: 0)
+Keep-Alive requests:    9938
+Total transferred:      7227092 bytes
+HTML transferred:       4175220 bytes
+Requests per second:    1646.58 [#/sec] (mean)
+Time per request:       151.830 [ms] (mean)
+Time per request:       0.607 [ms] (mean, across all concurrent requests)
+Transfer rate:          1162.11 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.7      0       6
+Processing:     0   71 542.6     15    6064
+Waiting:        0   41 387.3     14    6064
+Total:          0   71 542.8     15    6069
+
+Percentage of the requests served within a certain time (ms)
+  50%     15
+  66%     17
+  75%     19
+  80%     21
+  90%     30
+  95%     46
+  98%     85
+  99%   5001
+ 100%   6069 (longest request)

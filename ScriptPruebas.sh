@@ -5,7 +5,7 @@ concurrentes=(50 100 100 250 100 250 100 250 500 100 250 500)
 direccionCorta="http://virtual.lab.inf.uva.es:31172/gatosPequenios.html"
 direccionLarga="http://virtual.lab.inf.uva.es:31172/perrosGrandes.html"
 direccionDinamica="http://virtual.lab.inf.uva.es:31172/phptest.php"
-timeout=300
+timeout=1000000
 rm -r testRendimiento >/dev/null
 mkdir testRendimiento
 cd testRendimiento
