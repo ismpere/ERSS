@@ -5,6 +5,7 @@ concurrentes=(50 100 100 250 100 250 100 250 500 100 250 500)
 direccionCorta="http://virtual.lab.inf.uva.es:31172/gatosPequenios.html"
 direccionLarga="http://virtual.lab.inf.uva.es:31172/perrosGrandes.html"
 direccionDinamica="http://virtual.lab.inf.uva.es:31172/phptest.php"
+timeout=1000000
 rm -r testRendimiento >/dev/null
 mkdir testRendimiento
 cd testRendimiento
@@ -19,7 +20,7 @@ do
   do
     nfich="IC"$i
     echo "Lanzando prueba $i con ${peticiones[$i-1]} peticiones y ${concurrentes[$i-1]} clientes"
-    ab -k -n ${peticiones[$i-1]} -c ${concurrentes[$i-1]} $direccionCorta >$nfich
+    ab -k -s $timeout -n ${peticiones[$i-1]} -c ${concurrentes[$i-1]} $direccionCorta >$nfich
     echo "Completada prueba $i"
   done
   cd ..
@@ -30,7 +31,7 @@ do
   do
     nfich="IC"$i
     echo "Lanzando prueba $i con ${peticiones[$i-1]} peticiones y ${concurrentes[$i-1]} clientes"
-    ab -k -n ${peticiones[$i-1]} -c ${concurrentes[$i-1]} $direccionLarga >$nfich
+    ab -k  -s $timeout -n ${peticiones[$i-1]} -c ${concurrentes[$i-1]} $direccionLarga >$nfich
     echo "Completada prueba $i"
   done
   cd ..
@@ -41,9 +42,10 @@ do
   do
     nfich="IC"$i
     echo "Lanzando prueba $i con ${peticiones[$i-1]} peticiones y ${concurrentes[$i-1]} clientes"
-    ab -k -n ${peticiones[$i-1]} -c ${concurrentes[$i-1]} $direccionDinamica >$nfich
+    ab -k -s $timeout -n ${peticiones[$i-1]} -c ${concurrentes[$i-1]} $direccionDinamica >$nfich
     echo "Completada prueba $i"
   done
+  cd ..
   cd ..
 done
 exit
