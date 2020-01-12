@@ -17,6 +17,7 @@ The neccessary software to run the exercises is:
 
 - **Ismael Pérez Martín** - _Full Stack Developer_ - [GitHub - ismpere](https://github.com/ismpere)
 - **Víctor Rojo Álvarez** - _Full Stack Developer_ - [GitHub - Rojo97](https://github.com/Rojo97)
+- **Antonio Román López** - _Full Stack Developer_ - [GitHub - ttoso](https://github.com/ttoso)
 - **David Gómez Pedriza** - _Full Stack Developer_ - [GitHub - davgome](https://github.com/davgome)
 
 Consulte también la lista de [contribuidores](https://github.com/jesusinri/SAD/graphs/contributors) que participaron en este proyecto.
